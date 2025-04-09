@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SCSC F.E SIG 숙제 게시판</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Gowun Dodum', sans-serif;
+    }
+
+    body {
+      /* background: linear-gradient(135deg, #fceabb, #f8b500); */
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      flex-direction: column;
+    }
+
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .button-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      flex-direction: column;
+    }
+
+    .week-button {
+      background-color: #ffdd57;
+      color: #333;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .week-button:hover {
+      transform: translateY(-5px) scale(1.05);
+      background-color: #ffe773;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 500px) {
+      .week-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>숙제 게시판</h1>
+    <div class="button-grid">
+      <a href="https://somofth.github.io/scsc_fe_week2/" class="week-button" title="media, table tag: 음식점 메뉴판 만들기">2주차</a>
+      <a href="#" class="week-button" title="form tag: 설문조사 만들기" onclick="alert('아직이에요')">3주차</a>
+      <a href="#" class="week-button" onclick="alert('아직이에요')">4주차</a>
+      <a href="#" class="week-button" onclick="alert('아직이에요')">5주차</a>
+    </div>
+  </div>
+  <footer>2025-1 HTML+CSS/JS SIG</footer>
+</body>
+</html>
